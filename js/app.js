@@ -5,7 +5,7 @@ var Enemy = function(x, y, speed, sprite) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     enemyId ++;
-    this.x = - 100;
+    this.x = (- 100) * enemyId;
     this.y = positionY[random(0, 3)];
     this.speed = random(20, 70);
     // The image/sprite for our enemies, this uses
