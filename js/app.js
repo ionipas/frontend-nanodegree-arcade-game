@@ -1,8 +1,10 @@
 // Enemies our player must avoid
 const positionY = [60, 143, 226];
+let enemyId = 0;
 var Enemy = function(x, y, speed, sprite) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
+    enemyId ++;
     this.x = - 100;
     this.y = positionY[random(0, 3)];
     this.speed = random(20, 70);
