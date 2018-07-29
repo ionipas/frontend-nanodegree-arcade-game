@@ -64,6 +64,13 @@ moreEnemies();
 
 const player = new Player();
 
+Player.prototype.update = function() {
+  if (this.y < 5) {
+    this.x = 200;
+    this.y = 405;
+  }
+};
+
 Player.prototype.handleInput = function(key) {
   if (key === 'up' && this.y > 0) {
     this.y -= 40;
