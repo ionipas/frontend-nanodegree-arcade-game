@@ -64,6 +64,18 @@ moreEnemies();
 
 const player = new Player();
 
+Player.prototype.handleInput = function(key) {
+  if (key === 'up' && this.y > 0) {
+    this.y -= 40;
+  } else if (key === 'down' && this.y < 400) {
+    this.y += 40;
+  } else if (key === 'left' && this.x  > 0) {
+    this.x -= 50;
+  } else if (key === 'right' && this.x < 402) {
+    this.x += 50;
+  }
+};
+
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
