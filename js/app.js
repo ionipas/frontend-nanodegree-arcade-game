@@ -28,6 +28,10 @@ Enemy.prototype.update = function(dt) {
       this.x = -100;
       this.y = positionY[random(0, 3)];
     };
+    if (player.x - this.x < 60 && this.x - player.x < 60 && player.y - this.y < 50 && this.y - player.y < 50) {
+      player.x = 200;
+      player.y = 405;
+    }
 };
 
 // Draw the enemy on the screen, required method for game
