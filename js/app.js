@@ -40,8 +40,8 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 
 function Player(x, y, sprite) {
-  this.x = x;
-  this.y = y;
+  this.x = 200;
+  this.y = 405;
   this.sprite = 'images/char-boy.png';
 };
 
@@ -62,7 +62,7 @@ function moreEnemies() {
 }
 moreEnemies();
 
-const player = new Player(0, 0);
+const player = new Player();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
