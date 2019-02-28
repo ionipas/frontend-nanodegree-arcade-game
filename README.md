@@ -5,6 +5,8 @@
 #### Instalation:
 Download all the files and open `index.html` in your browser.
 
+![](https://raw.githubusercontent.com/ionipas/frontend-nanodegree-arcade-game/master/images/screenshot.png)
+
 #### How to play the game
 - In this game you have a Player and Enemies (Bugs).
 - The goal of the player is to reach the water, without colliding into any one of the enemies.
